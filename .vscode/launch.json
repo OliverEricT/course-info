@@ -6,18 +6,19 @@
 	"configurations": [
 		{
 			"type": "java",
-			"name": "Current File",
+			"name": "CourseRetriever - sander",
 			"request": "launch",
-			"mainClass": "${file}",
-			"args": "${command:SpecifyProgramArgs}"
+			"mainClass": "com.pluralsight.courseinfo.cli.CourseRetriever",
+			"projectName": "course-info-cli",
+			"args": "sander-mak"
 		},
 		{
 			"type": "java",
-			"name": "CourseRetriever",
+			"name": "CourseRetriever - specify",
 			"request": "launch",
 			"mainClass": "com.pluralsight.courseinfo.cli.CourseRetriever",
-			"projectName": "course-info",
-			"args": "0000"
-		}
+			"projectName": "course-info-cli",
+			"args": "${command:SpecifyProgramArgs}"
+		},
 	]
 }
