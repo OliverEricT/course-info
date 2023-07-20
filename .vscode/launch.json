@@ -6,7 +6,7 @@
 	"configurations": [
 		{
 			"type": "java",
-			"name": "CourseRetriever - sander",
+			"name": "CourseInfo CLI - sander",
 			"request": "launch",
 			"mainClass": "com.pluralsight.courseinfo.cli.CourseRetriever",
 			"projectName": "course-info-cli",
@@ -14,11 +14,18 @@
 		},
 		{
 			"type": "java",
-			"name": "CourseRetriever - specify",
+			"name": "CourseInfo CLI - specify",
 			"request": "launch",
 			"mainClass": "com.pluralsight.courseinfo.cli.CourseRetriever",
 			"projectName": "course-info-cli",
 			"args": "${command:SpecifyProgramArgs}"
+		},
+		{
+			"type": "java",
+			"name": "CourseInfo SERVER",
+			"request": "launch",
+			"mainClass": "com.pluralsight.courseinfo.server.CourseServer",
+			"projectName": "course-info-server",
 		},
 	]
 }

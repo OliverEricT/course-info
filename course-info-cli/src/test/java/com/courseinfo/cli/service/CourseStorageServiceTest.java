@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.junit.jupiter.api.Test;
 
@@ -32,7 +33,8 @@ public class CourseStorageServiceTest {
 			"1",
 			"Title 1",
 			100,
-			"https://app.pluralsight.com/url-1"
+			"https://app.pluralsight.com/url-1",
+			Optional.empty()
 		);
 
 		assertEquals(List.of(expected), repository.getAllCourses());
@@ -50,6 +52,11 @@ public class CourseStorageServiceTest {
 		@Override
 		public List<Course> getAllCourses() {
 			return courses;
+		}
+
+		@Override
+		public void addNotes(String id, String notes){
+			throw new UnsupportedOperationException();
 		}
 
 	}
